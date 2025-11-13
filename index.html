@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+	<header>
+		<h1>Hello There ! <span>I am Samip</span></h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#">navigation links</a></li>
+			<li><a href="#">navigation links</a></li>
+		</ul>
+	</nav>
+	<section id="about">
+		<h2>About me</h2>
+		<p>Hello there everyone, Welcome to my portfolio site, I am Samip Regmi and I love computers</p>
+	</section>
+	<section id="projects">
+		<h2>My Projects</h2>
+		<div id="projects-div">
+			<article>
+				<h3>Magnet Matric</h3>
+				<p>This was one of the first game I coded, There is a ball and a paddle, and paddle shrinks each time
+					the ball strikes it </p>
+				<img src="images/image.png" alt="">
+			</article>
+			<article>
+				<h3>Examify</h3>
+				<p>A simple quiz application that i coded in C/Html when i was on class 12</p>
+				<img src="images/image.png" alt="">
+			</article>
+			<article>
+				<h3>Game Of Life</h3>
+				<p>A simple cellular automata which me and my friend coded, my friend coded this using SDL in C whereas
+					I used Raylib in C</p>
+				<img src="images/image.png" alt="">
+			</article>
+			<article>
+				<h3>Remote Save</h3>
+				<p>My attempt to make a barebone content saver in server using flask</p>
+				<img src="images/image.png" alt="">
+			</article>
+			<article>
+				<h3>IMS</h3>
+				<p>A simple image to sound and sound to image mapper using django backend and react/shadcn frontend</p>
+				<img src="images/image.png" alt="">	
+			</article>
+		</div>
+
+	</section>
+	<section id="contacts">
+		<form id="contact-form">
+			<label for="name">Name</label>
+			<input name="name" id="name" type="text" placeholder="Enter your name here" required>
+			<label for="email">Email</label>
+			<input name="email" id="email" type="email" placeholder="Enter your email here" required>
+			<label for="message">Message</label>
+			<textarea name="message" id="message" rows="4" cols="50"></textarea>
+			<input type="submit" value="Submit">
+		</form>
+	</section>
+	<footer>Samip Regmi</footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+<script>
+	var setVanta = () => {
+		if (window.VANTA) window.VANTA.BIRDS({
+			el: "body",
+			mouseControls: true,
+			touchControls: true,	
+			gyroControls: false,
+			minHeight: 200.00,
+			minWidth: 200.00,
+			scale: 1.00,
+			scaleMobile: 1.00,
+			backgroundColor: 0xffffff,
+			birdSize: 1.80,
+			wingSpan: 40.00,
+			speedLimit: 4.00,
+			separation: 100.00,
+			alignment: 65.00,
+			cohesion: 33.00,
+			quantity: 3.00
+		})
+	}
+	setVanta()
+
+</script>
+
+</html>
