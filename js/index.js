@@ -99,3 +99,8 @@ navItems.forEach(item => {
         }
     });
 });
+
+
+let date = new Date()
+date.getFullYear()
+document.querySelector('footer').textContent = `Samip Regmi ${date}`

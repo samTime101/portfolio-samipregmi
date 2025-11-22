@@ -1,0 +1,8 @@
+
+@keyframes load { 
+    to { width: var(--w); }
+}
+@keyframes refill {
+    from { width: 0; }
+    to { width: var(--w); }
+}

@@ -1,0 +1,12 @@
+@media screen and (max-width: 768px) {
+    #projects-div, #skills-div, #contents {
+        grid-template-columns: 1fr;
+    }
+    #contact-form {
+        width: 80%;
+    }
+    .slider {
+        height: 150px;
+        width: 95%;
+    }
+}

@@ -6,9 +6,7 @@
     --text-dark: #333;
     --text-light: #ededed;
     --radius: 18px;
-}
-
-
+} 
 
 body {
     transition: background 0.25s ease, color 0.25s ease;
@@ -71,4 +69,16 @@ p {
     font-weight: bold;
     background: var(--main-gradient);
     color: white;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0 !important;
+    padding: 20px;
+    background: var(--main-gradient);
+    color: white;
+    text-align: center;
+    font-weight: bold;
 }

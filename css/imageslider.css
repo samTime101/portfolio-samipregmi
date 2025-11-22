@@ -1,0 +1,50 @@
+.slider {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    height: 200px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slider img.active {
+    display: block;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+    transition: background 0.3s;
+}
+
+.slider button:hover {
+    background: rgba(0,0,0,0.8);
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}

@@ -1,25 +1,3 @@
-:root {
-    --bg: white;
-    --text: black;
-    --card-bg: #f3f3f3;
-    --nav-bg: linear-gradient(90deg, #FE7295, #FA9B96, #f718c3);
-    --gradient: linear-gradient(90deg, #FE7295, #FA9B96, #FC46D3);
-    --shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-.dark-mode {
-    --bg: #121212;
-    --text: #ededed;
-    --card-bg: #1e1e1e;
-    --nav-bg: linear-gradient(90deg, #3b0d20, #84234c, #c736b9);
-    --gradient: linear-gradient(90deg, #ff3d7f, #ff6584, #ff00d4);
-    --shadow: 0 4px 12px rgba(255, 0, 100, 0.35);
-}
-
-* {
-    transition: background 0.25s ease, color 0.25s ease;
-}
-
 html, body {
     margin: 0 !important;
     padding: 0 !important;
@@ -143,16 +121,9 @@ article {
     animation: load 2s ease forwards;
 }
 
-@keyframes load { to { width: var(--w); } }
-
 .skill:hover .bar div {
     width: 0; 
     animation: refill 2s ease forwards;
-}
-
-@keyframes refill {
-    from { width: 0; }
-    to { width: var(--w); }
 }
 
 #contacts {
@@ -218,77 +189,11 @@ canvas, video {
     transform: rotate(-90deg);
     z-index: 1000;
 }
-.slider {
-    position: relative;
-    width: 80%;
-    max-width: 800px;
-    height: 200px;
-    margin: 20px auto;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: var(--shadow);
-}
-
-.slider img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: none;
-    border-radius: 10px;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.slider img.active {
-    display: block;
-}
-
-.slider button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 24px;
-    z-index: 10;
-    transition: background 0.3s;
-}
-
-.slider button:hover {
-    background: rgba(0,0,0,0.8);
-}
-
-#prev {
-    left: 10px;
-}
-
-#next {
-    right: 10px;
-}
-
-/* Responsive */
-@media screen and (max-width: 768px) {
-    .slider {
-        height: 150px;
-        width: 95%;
-    }
-}
-
 footer {
     margin: 0 !important;
     padding: 20px;
     background: var(--gradient);
     color: white;
-}
-
-@media screen and (max-width: 768px) {
-    #projects-div, #skills-div, #contents {
-        grid-template-columns: 1fr;
-    }
-    #contact-form {
-        width: 80%;
-    }
+    text-align: center;
+    font-weight: bold;
 }

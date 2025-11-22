@@ -1,0 +1,21 @@
+:root {
+    --bg: white;
+    --text: black;
+    --card-bg: #f3f3f3;
+    --nav-bg: linear-gradient(90deg, #FE7295, #FA9B96, #f718c3);
+    --gradient: linear-gradient(90deg, #FE7295, #FA9B96, #FC46D3);
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.dark-mode {
+    --bg: #121212;
+    --text: #ededed;
+    --card-bg: #1e1e1e;
+    --nav-bg: linear-gradient(90deg, #3b0d20, #84234c, #c736b9);
+    --gradient: linear-gradient(90deg, #ff3d7f, #ff6584, #ff00d4);
+    --shadow: 0 4px 12px rgba(255, 0, 100, 0.35);
+}
+
+* {
+    transition: background 0.25s ease, color 0.25s ease;
+}
