@@ -15,6 +15,10 @@ submit_button_input.addEventListener("click", (event) => {
     let email_value = email_input.value;
     let message_value = message_input.value;
 
+    if (!name_value || !email_value || !message_value) {
+        alert("All fields are required!");
+        return;
+    }
     save_to_localstorage(name_value, email_value, message_value)
     window.location.href = './pages/form-details.html'
 })
