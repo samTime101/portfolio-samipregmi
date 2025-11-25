@@ -22,6 +22,19 @@ header h1 {
     width: 100%;
 }
 
+#profile_image {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+#profile_image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--gradient);
+}
+
 span {
     background: var(--gradient);
     -webkit-background-clip: text;
